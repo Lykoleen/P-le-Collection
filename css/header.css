@@ -1,0 +1,34 @@
+/*  Breakpoints
+320px — 480px : les mobiles
+481px — 768px : iPads, tablettes
+769px — 1024px : petits écrans, ordinateurs portables
+1025px — 1200px : ordinateurs de bureau, écrans larges
+1201px et plus —  écrans extra larges, TV*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_navbar {
+    width: 100vw;
+    height: 150px;
+    background-color: gray;
+    display: flex;
+}
+
+.container_titles_nav {
+    background-color: bisque;
+    width: 150px;
+    height: 150px;
+}
+
+.logo_nav {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_nav img {}
