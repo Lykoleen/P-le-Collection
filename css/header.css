@@ -20,35 +20,34 @@
 }
 
 .logo_nav img {
-    width: 250px;
-    height: 150px;
+    width: 150px;
 }
 
 .container_navbar {
     width: 100vw;
-    height: 170px;
-    background-color: gray;
+    height: 150px;
+    background-color: black;
     display: flex;
+    align-items: center;
 }
 
 .container_titles_nav {
     width: 100%;
 }
 
-.container_titles_nav ul {
-    background-color: bisque;
-    padding: 10px;
-    margin: 10px;
+.list_titles_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.container_titles_nav ul li {
-    list-style-type: none;
+.list_titles_nav li {
+    list-style: none;
+    font-size: 1.1rem;
 }
 
-
-.container_navbar,
-.logo_nav,
-.container_titles_nav {
-    border: 1px black solid;
-
+.list_titles_nav li a {
+    text-decoration: none;
+    color: white;
 }
