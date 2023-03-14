@@ -17,28 +17,31 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container-fluid d-flex p-0 nav_bar container_header">
-            <div class="container container_logo p-0">
+        <div class="container-fluid p-0 nav_bar d-flex align-items-center">
+            <div class="container d-flex justify-content-start container_logo p-0">
                 <img src="/images/logo_2.jpg" alt="Pôle Collection" width="120" height="75">
             </div>
             <div class="menu_burger">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="p-0">
-                        <ul class="container_list_nav">
-                            <li><a href="#">Acceuil</a></li>
-                            <li><a href="#">Evenements</a></li>
-                            <li><a href="#">Qui sommes-nous ?</a></li>
-                            <li><a href="#">Galerie</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark">
-                    <div class="container-fluid justify-content-end">
-                        <button class="navbar-toggler  burger" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-md navbar-dark p-0">
+                    <div class="container-fluid justify-content-end pt-1 d-md-none ">
+                        <button class="navbar-toggler d-flex justify-content-end" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse container_menu_deroulant justify-content-md-end mb-5 mb-md-0"
+                        id="navbarToggleExternalContent">
+                        <div class="p-0">
+                            <ul class="d-flex flex-column justify-content-center align-items-center align-items-md-center m-0 p-0 container_list_nav
+                                flex-md-row ">
+                                <li class="me-4 me-lg-5"><a href="#">Acceuil</a></li>
+                                <li class="me-4 me-lg-5"><a href="#">Evenements</a></li>
+                                <li class="me-4 me-lg-5"><a href="#">Qui sommes-nous ?</a></li>
+                                <li class="me-4 me-lg-5"><a href="#">Galerie</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>

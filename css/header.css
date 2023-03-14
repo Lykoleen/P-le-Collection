@@ -15,16 +15,9 @@ header {
     background-color: black;
 }
 
-.container_header {
-    display: flex;
-    align-items: center;
-}
-
 .container_logo {
-    display: flex;
-    justify-content: flex-start;
     width: 120px;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .menu_burger {
@@ -32,24 +25,16 @@ header {
     height: 100%;
 }
 
-.container_list_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 0;
-    padding: 10px 0 0 0;
+.container_menu_deroulant {
+    width: 100%;
+}
+
+.container_list_nav li {
+    padding-bottom: 5px;
 }
 
 .container_list_nav li a {
     text-decoration: none;
     color: white;
-}
 
-
-
-.burger {
-    display: flex;
-    justify-content: flex-end;
 }
