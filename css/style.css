@@ -1,0 +1,113 @@
+/*  Breakpoints
+320px — 480px : les mobiles
+481px — 768px : iPads, tablettes
+769px — 1024px : petits écrans, ordinateurs portables
+1025px — 1200px : ordinateurs de bureau, écrans larges
+1201px et plus —  écrans extra larges, TV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(144, 144, 144, 1) 51%, rgba(1, 242, 240, 1) 100%);
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+h2::before {
+    background: #e1e1e1 none repeat scroll 0 0;
+    bottom: -15px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    width: 100px;
+}
+
+h2::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    background: #30afb8 none repeat scroll 0 0;
+    bottom: -15px;
+    height: 3px;
+    margin-left: -15px;
+    width: 30px;
+    background-color: #e4321b;
+}
+
+/* Section News*/
+
+.container_grid {
+    border: 1px red solid;
+
+}
+
+.cards_news {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.picture_cards {
+
+    background-color: orange;
+    width: 100%;
+
+}
+
+.picture_1 {
+    background-image: url(/images/photos_galerie_2/voiture_10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+.text_cards {
+    background-color: #fff;
+    text-align: justify;
+}
+
+.text {
+    color: red;
+}
+
+/*End Section News*/
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 60vw;
+        margin: auto;
+        background-size: 1500px;
+    }
+}
