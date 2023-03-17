@@ -20,8 +20,13 @@ body {
 
 p {
     font-size: 0.9rem;
-    margin: 0;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+p,
+h4 {
+    margin: 20px 10px;
+    text-align: justify;
 }
 
 h1,
@@ -63,43 +68,65 @@ h2::after {
     background-color: #e4321b;
 }
 
-/* Section News*/
+/* Section presentation*/
 
-.container_grid {
-    border: 1px red solid;
-
+.white {
+    color: #e1e1e1;
 }
 
+/*End Section presentation*/
+
+/* Section News*/
+
 .cards_news {
-    border: 1px black solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .picture_cards {
-
-    background-color: orange;
     width: 100%;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .picture_1 {
-    background-image: url(/images/photos_galerie_2/voiture_10.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
+    background-image: url(/images/photos_evenements/500_ferrari/Affiche.jpg);
+    padding-bottom: 100%;
+}
+
+.picture_2 {
+    background-image: url(/images/b2.jpg);
+    padding-bottom: 65%;
+}
+
+.picture_3 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_7.jpg);
+    padding-bottom: 75%;
+}
+
+.picture_4 {
+    background-image: url(/images/photos_evenements/le_mans_classic/affiche.jpg);
+    padding-bottom: 50%;
 }
 
 .text_cards {
-    background-color: #fff;
     text-align: justify;
 }
 
-.text {
-    color: red;
+.button_news {
+    background-color: #1c87c9;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: auto;
 }
 
 /*End Section News*/
