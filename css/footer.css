@@ -10,3 +10,137 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Container news_footer */
+
+.container_footer {
+    color: white;
+    background-color: black;
+    padding: 40px 10px;
+}
+
+.center_div h3 {
+    text-align: start;
+    margin: 30px 3px;
+    padding-left: 20px;
+    border-left: 3px solid red;
+}
+
+.center_div h3 span {
+    color: red;
+}
+
+.news_footer ul {
+    padding-left: 19px;
+}
+
+.news_footer ul li {
+    padding-bottom: 10px;
+    list-style-type: circle;
+}
+
+.news_footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Container follow_footer */
+
+.container_follow_footer {
+    width: 100%;
+}
+
+.link_follow {
+    background-image: url(/images/image_footer.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 150px;
+}
+
+.logo_footer {
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 10px;
+}
+
+.text_link_follow {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    left: 80px;
+    top: 10px;
+}
+
+.text_link_follow p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.button_footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #4867AA;
+    padding: 0 10px;
+}
+
+.button_footer img {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+@media screen and (min-width: 769px) {
+    .link_follow {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container_footer {
+        height: 300px;
+        padding: 0;
+    }
+
+    .center_div {
+        display: flex;
+        padding: 20px 0px;
+        margin: 0 10px;
+        position: relative;
+        height: 100%;
+    }
+
+    .news_footer {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container_follow_footer {
+        width: 50%;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .center_div {
+        justify-content: space-around;
+        min-width: 1200px;
+        margin: auto;
+        padding: 0;
+    }
+}

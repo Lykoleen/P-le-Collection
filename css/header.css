@@ -38,3 +38,13 @@ header {
     color: white;
 
 }
+
+@media screen and (min-width: 1401px) {
+    .container_logo {
+        padding-left: 200px;
+    }
+
+    .menu_burger {
+        padding-right: 200px;
+    }
+}
