@@ -16,7 +16,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container-fluid p-0 nav_bar d-flex align-items-center">
+        <div class="container-fluid p-0 nav_bar d-flex align-items-center" id="up_page">
             <div class="container d-flex container_logo">
                 <img src="/images/logo_2.jpg" alt="Pôle Collection" width="120" height="75">
             </div>
@@ -35,10 +35,10 @@
                         <div class="p-0">
                             <ul class="d-flex flex-column justify-content-center align-items-center align-items-md-center m-0 p-0 container_list_nav
                                 flex-md-row ">
-                                <li class="me-4 me-lg-5"><a href="#">Acceuil</a></li>
-                                <li class="me-4 me-lg-5"><a href="#">Evenements</a></li>
-                                <li class="me-4 me-lg-5"><a href="#">Qui sommes-nous ?</a></li>
-                                <li class="me-4 me-lg-5"><a href="#">Galerie</a></li>
+                                <li class="me-4 me-lg-5"><a href="#up_page">Acceuil</a></li>
+                                <li class="me-4 me-lg-5"><a href="#news">Evenements</a></li>
+                                <li class="me-4 me-lg-5"><a href="#presentation">Qui sommes-nous ?</a></li>
+                                <li class="me-4 me-lg-5"><a href="#gallery_pictures">Galerie</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                 </button>
             </div>
         </section>
-        <section class="presentation">
+        <section class="presentation" id="presentation">
             <h1 class="white">Pôle Collection</h1>
             <h2 class="white">qui-sommes-nous ?</h2>
             <p class="white">Le rassemblement mensuel Pole Collection est organisé par l'association Autos Passionantes
@@ -118,7 +118,7 @@
                 </li>
             </ul>
         </section>
-        <section class="news white">
+        <section class="news white" id="news">
             <h2>Actualités</h2>
             <div class="container_grid">
                 <div class="cards_news">
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery_pictures">
+        <section class="gallery_pictures" id="gallery_pictures">
             <h2>Galerie Photo</h2>
             <p class="text_gallery_pictures">Rassemblement du 14 mars 2021</p>
             <div class="gallery_pictures_grid">
@@ -200,6 +200,7 @@
                 <div class="container_pictures_gallery picture_gallery_28"></div>
             </div>
         </section>
+        <a href="#up_page"><button href="#up_page" class="back_to_up"></button></a>
     </main>
     <!-- Footer -->
     <footer>
@@ -211,6 +212,7 @@
                         <li><a href="#">Sport et Collection (500 Ferrari contre le Cancer) : Rappel !</a></li>
                         <li><a href="#">Inscriptions événements 2023</a></li>
                         <li><a href="#">Rétromobile 2023 : pleins phares !</a></li>
+                        <li><a href="#">Le Mans classic</a></li>
                     </ul>
                 </div>
                 <div class="container_follow_footer">
@@ -221,10 +223,10 @@
                             <p>3 650 followers</p>
                             <p>Pôle Collection</p>
                         </div>
-                        <button class="button_footer" onclick="#"><img src="/images/facebook.png"
-                                alt="logo facebook">Suivez
-                            notre
-                            page Facebook </button>
+                        <a href="https://www.facebook.com/polecollection"><button class="button_footer"><img
+                                    src="/images/facebook.png" alt="logo facebook">Suivez
+                                notre
+                                page Facebook </button></a>
                     </div>
                 </div>
             </div>

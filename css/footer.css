@@ -16,7 +16,9 @@
 .container_footer {
     color: white;
     background-color: black;
+    margin-top: 50px;
     padding: 40px 10px;
+    box-shadow: 0 -10px 10px 10px black;
 }
 
 .center_div h3 {
@@ -139,7 +141,7 @@
 @media screen and (min-width: 1401px) {
     .center_div {
         justify-content: space-around;
-        min-width: 1200px;
+        width: 70%;
         margin: auto;
         padding: 0;
     }

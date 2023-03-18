@@ -28,6 +28,10 @@ p {
     font-weight: 600;
 }
 
+h1 {
+    text-shadow: 0 2px 15px rgb(57, 211, 235);
+}
+
 p,
 h4 {
     margin: 20px 10px;
@@ -356,6 +360,45 @@ h2::after {
 }
 
 /* End Section Gallery Pictures*/
+
+/* Button back to up */
+
+.back_to_up {
+    display: inline-block;
+    background-color: rgb(229, 151, 33);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s,
+        visibility hidden;
+    z-index: 1000;
+}
+
+.back_to_up::after {
+    content: '\2191';
+    font-size: 4em;
+    line-height: 37px;
+    color: #fff;
+}
+
+.back_to_up:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.back_to_up.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* End Button back to up*/
+
+/* Max width for main after 1400px */
 
 @media screen and (min-width: 1400px) {
     main {
