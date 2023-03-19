@@ -1,0 +1,138 @@
+/*  Breakpoints
+320px — 480px : les mobiles
+481px — 768px : iPads, tablettes
+769px — 1024px : petits écrans, ordinateurs portables
+1025px — 1200px : ordinateurs de bureau, écrans larges
+1201px et plus —  écrans extra larges, TV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+div p,
+div ul {
+    font-size: 1.1rem;
+}
+
+.poster {
+    background-image: url(/images/photos_evenements/500_ferrari/Affiche.jpg);
+    padding-bottom: 120%;
+    width: 80%;
+    margin: auto;
+    background-size: cover;
+}
+
+.legend_poster p {
+    text-align: center;
+    color: white;
+}
+
+.button_news {
+    width: 300px;
+}
+
+.button_registration {
+    width: 300px;
+    background-color: #E4321B;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.button_registration:hover {
+    font-weight: bold;
+    background-color: #96e61d;
+    color: black;
+}
+
+.ferrari_picture {
+    background-image: url(/images/photos_evenements/500_ferrari/ferrari_de_collection.jpg);
+    padding-bottom: 70%;
+    width: 90%;
+    margin: 30px auto;
+    background-size: cover;
+}
+
+.f1_picture {
+    background-image: url(/images/photos_evenements/500_ferrari/henri_pesacarolo.jpg);
+    padding-bottom: 60%;
+    width: 90%;
+    margin: 20px auto;
+    background-size: cover;
+}
+
+.road_picture {
+    background-image: url(/images/photos_evenements/500_ferrari/parade_500_ferrari.jpg);
+    padding-bottom: 60%;
+    width: 90%;
+    margin: 20px auto;
+    background-size: cover;
+}
+
+.container_road_picture ul li {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 769px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .poster {
+        padding-bottom: 110%;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .poster {
+        padding-bottom: 70%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .container_f1_picture {
+        display: flex;
+    }
+
+    .f1_picture {
+        width: 60%;
+        padding-bottom: 40%;
+    }
+
+    .container_f1_picture p {
+        width: 40%;
+    }
+
+    .container_road_picture {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .road_picture {
+        width: 60%;
+        padding-bottom: 40%;
+    }
+
+    .text_container_road {
+        width: 40%;
+    }
+
+}

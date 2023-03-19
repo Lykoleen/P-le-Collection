@@ -107,7 +107,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1070px) {
     .container_footer {
         height: 300px;
         padding: 0;
