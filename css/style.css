@@ -19,13 +19,18 @@ body {
     margin: auto;
 }
 
+section {
+    margin: 40px auto;
+}
+
 a {
     cursor: pointer;
 }
 
-p {
-    font-size: 0.9rem;
-    font-weight: 600;
+p,
+article {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 h1 {
@@ -55,7 +60,7 @@ h3 {
 }
 
 h2::before {
-    background: #e1e1e1 none repeat scroll 0 0;
+    background: #fdfdfd none repeat scroll 0 0;
     bottom: -15px;
     content: "";
     height: 1px;
@@ -81,12 +86,10 @@ h2::after {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    opacity: 1;
     width: 50px;
     height: 50px;
-    opacity: 1;
 }
 
 /* End Slide*/
@@ -110,30 +113,39 @@ h2::after {
 }
 
 .picture_cards {
-    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 15px;
 }
 
 .picture_1 {
     background-image: url(/images/photos_evenements/500_ferrari/Affiche.jpg);
     padding-bottom: 100%;
+    width: 70%;
+    border-radius: 20px;
 }
 
 .picture_2 {
     background-image: url(/images/b2.jpg);
-    padding-bottom: 60%;
+    padding-bottom: 55%;
+    width: 85%;
+    border-radius: 15px;
+
 }
 
 .picture_3 {
     background-image: url(/images/photos_evenements/retromobile/voiture_7.jpg);
-    padding-bottom: 70%;
+    padding-bottom: 64%;
+    width: 85%;
+    border-radius: 15px;
 }
 
 .picture_4 {
     background-image: url(/images/photos_evenements/le_mans_classic/affiche.jpg);
-    padding-bottom: 47%;
+    padding-bottom: 43%;
+    width: 85%;
+    border-radius: 15px;
 }
 
 .text_cards {
@@ -178,7 +190,8 @@ h2::after {
     }
 
     .picture_1 {
-        padding-bottom: 80%;
+        width: 57%;
+        padding-bottom: 81%;
     }
 
     .button_news {
@@ -223,6 +236,7 @@ h2::after {
 
 .container_pictures_gallery {
     background-size: cover;
+    border-radius: 15px;
 }
 
 .container_pictures_gallery:last-child {

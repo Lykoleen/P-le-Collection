@@ -36,7 +36,27 @@ header {
 .container_list_nav li a {
     text-decoration: none;
     color: white;
+    position: relative;
 
+}
+
+.container_list_nav li a::after {
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fcfcfc;
+    height: 1px;
+    transition: all .5s;
+}
+
+.container_list_nav li a:hover::after {
+    width: 100%;
 }
 
 @media screen and (min-width: 1401px) {

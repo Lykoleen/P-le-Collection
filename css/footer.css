@@ -39,6 +39,11 @@
 .news_footer ul li {
     padding-bottom: 10px;
     list-style-type: circle;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.news_footer ul li:hover {
+    color: red;
 }
 
 .news_footer ul li a {
@@ -76,10 +81,11 @@
     height: 50px;
     left: 80px;
     top: 10px;
+    backdrop-filter: blur(5px) grayscale(0.5) opacity(0.8);
 }
 
 .text_link_follow p {
-    margin: 5px 0;
+    margin: 0;
     font-size: 1.1rem;
     color: black;
     font-weight: bold;

@@ -1,0 +1,148 @@
+/*  Breakpoints
+320px — 480px : les mobiles
+481px — 768px : iPads, tablettes
+769px — 1024px : petits écrans, ordinateurs portables
+1025px — 1200px : ordinateurs de bureau, écrans larges
+1201px et plus —  écrans extra larges, TV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+h1,
+h2,
+h3,
+ul,
+article,
+p {
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+.button_registration {
+    width: 200px;
+    background-color: #E4321B;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    transition: color 0.5s, background-color 0.5s;
+    animation: rotate infinite ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    70% {
+        transform: rotate(-5deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
+
+.button_registration:hover {
+    font-weight: bold;
+    background-color: #96e61d;
+    color: black;
+}
+
+.picture_rallye {
+    background-image: url(/images/photos_galerie_2/voiture_27.jpg);
+    background-size: cover;
+    width: 50%;
+    padding-bottom: 33%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.ferrari_picture {
+    background-image: url(/images/photos_evenements/page_evenements/sport-collection-plateaux-ferrari-presentation.jpg);
+    background-size: cover;
+    width: 60%;
+    padding-bottom: 33%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.container_le_mans * {
+    color: black;
+}
+
+.picture_le_mans {
+    background-image: url(/images/photos_evenements/page_evenements/affiche_le_mans.jpg);
+    background-size: cover;
+    width: 70%;
+    padding-bottom: 30%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.container_picture_and_prices ul {
+    list-style-type: disclosure-closed;
+}
+
+@media screen and (min-width: 769px) {
+
+    /* Section Rallye + Ferrari */
+    .container_rallye,
+    .container_ferrari {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+
+    .picture_rallye,
+    .ferrari_picture {
+        width: 100%;
+        max-width: 450px;
+        height: 300px;
+        padding-bottom: 0;
+        margin: auto 0;
+    }
+
+    .text_rallye,
+    .text_ferrari {
+        width: 45%;
+
+    }
+
+    .button_registration {
+        margin: auto 10px;
+    }
+
+    /*End Section Rallye + Ferrari*/
+}
