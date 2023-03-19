@@ -364,12 +364,14 @@ h2::after {
 }
 
 @media screen and (min-width: 1025px) {
-    .gallery_pictures_grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .container_pictures_gallery:last-child {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .gallery_pictures_grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 

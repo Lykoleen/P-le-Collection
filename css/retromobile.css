@@ -14,6 +14,69 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-h1 {
+main {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1,
+article,
+p {
     color: white;
+    text-align: justify;
+}
+
+.poster_retromobile {
+    background-image: url(/images/photos_evenements/retromobile/affiche.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 94%;
+    margin: 20px auto;
+    padding-bottom: 44%;
+    border-radius: 15px;
+}
+
+.container_retromobile_picture_1 div div {
+    background-size: cover;
+    padding-bottom: 150%;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.container_retromobile_picture_1 p {
+    text-align: center;
+}
+
+.porsche_907 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_1.jpg);
+}
+
+.ferrari_512 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_5.jpg);
+}
+
+.ferrari_375 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_6.jpg);
+}
+
+@media screen and (min-width: 481px) {
+    .pictures_auto_show {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .pictures_auto_show {
+        width: 95%;
+    }
+
+    .container_retromobile_picture_1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .picture_retromobile_1 {
+        width: 100%;
+    }
 }
