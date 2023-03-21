@@ -17,6 +17,7 @@
 main {
     margin: 0 auto;
     padding: 0 10px;
+    width: 90%;
 }
 
 h1,
@@ -36,14 +37,23 @@ p {
     border-radius: 15px;
 }
 
-.container_retromobile_picture_1 div div {
+.container_1_retromobile_picture div div,
+.container_2_retromobile_picture div div,
+.container_3_retromobile_picture div div,
+.container_4_retromobile_picture div div,
+.porsche_911 {
     background-size: cover;
-    padding-bottom: 150%;
+    background-position: center;
+    padding-bottom: 70%;
     border-radius: 15px;
     margin: 20px auto;
 }
 
-.container_retromobile_picture_1 p {
+.container_1_retromobile_picture p,
+.container_2_retromobile_picture p,
+.container_3_retromobile_picture p,
+.container_4_retromobile_picture p,
+.container_porshe_911 p {
     text-align: center;
 }
 
@@ -59,6 +69,47 @@ p {
     background-image: url(/images/photos_evenements/retromobile/voiture_6.jpg);
 }
 
+
+.cegga_ferrari {
+    background-image: url(/images/photos_evenements/retromobile/voiture_2.jpg);
+}
+
+.jaguar_e_s1 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_3.jpg);
+}
+
+.ferrari_f1_312t {
+    background-image: url(/images/photos_evenements/retromobile/voiture_4.jpg);
+}
+
+.ferrari_500_f2 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_7.jpg);
+}
+
+.ferrari_250_gto {
+    background-image: url(/images/photos_evenements/retromobile/voiture_8.jpg);
+}
+
+.ferrari_f1_312t5 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_9.jpg);
+}
+
+.porsche_911 {
+    background-image: url(/images/photos_evenements/retromobile/voiture_12.jpg);
+}
+
+.ferrari_250_gt {
+    background-image: url(/images/photos_evenements/retromobile/voiture_13.jpg);
+}
+
+.avions_voisin {
+    background-image: url(/images/photos_evenements/retromobile/voiture_14.jpg);
+}
+
+.alfa_romeo_6c {
+    background-image: url(/images/photos_evenements/retromobile/voiture_15.jpg);
+}
+
 @media screen and (min-width: 481px) {
     .pictures_auto_show {
         width: 80%;
@@ -70,7 +121,10 @@ p {
         width: 95%;
     }
 
-    .container_retromobile_picture_1 {
+    .container_1_retromobile_picture,
+    .container_2_retromobile_picture,
+    .container_3_retromobile_picture,
+    .container_4_retromobile_picture {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
