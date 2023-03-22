@@ -1,0 +1,90 @@
+/*  Breakpoints
+320px — 480px : les mobiles
+481px — 768px : iPads, tablettes
+769px — 1024px : petits écrans, ordinateurs portables
+1025px — 1200px : ordinateurs de bureau, écrans larges
+1201px et plus —  écrans extra larges, TV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+h1,
+h4,
+ul,
+article,
+p {
+    color: white;
+    text-align: justify;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+article {
+    margin: auto;
+}
+
+article:first-child p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.ticket_office article p {
+    text-align: justify;
+}
+
+.poster_le_mans {
+    background-image: url(/images/photos_evenements/le_mans_classic/affiche.jpg);
+    padding-bottom: 45%;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+main ul li {
+    list-style-type: circle;
+}
+
+
+.ticket_office_rows {
+    margin-bottom: 50px;
+}
+
+.ticket_office_prices ul li {
+    font-weight: bold;
+}
+
+.text_center p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1025px) {
+    .ticket_office_rows {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ticket_office {
+        width: 60%;
+    }
+
+    .ticket_office_prices {
+        width: 35%;
+    }
+}

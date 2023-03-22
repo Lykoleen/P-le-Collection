@@ -40,6 +40,7 @@
     padding-bottom: 10px;
     list-style-type: circle;
     transition: color 0.5s, font-size 0.5s;
+    font-size: 1rem;
 }
 
 .news_footer ul li:hover {
@@ -113,7 +114,7 @@
     }
 }
 
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1201px) {
     .container_footer {
         height: 300px;
         padding: 0;

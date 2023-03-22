@@ -26,6 +26,7 @@ div ul {
 .poster {
     background-image: url(/images/photos_evenements/500_ferrari/Affiche.jpg);
     padding-bottom: 120%;
+    border-radius: 15px;
     width: 80%;
     margin: auto;
     background-size: cover;
@@ -52,6 +53,30 @@ div ul {
     font-size: 20px;
     margin: auto;
     transition: color 0.5s, background-color 0.5s;
+    animation: rotate infinite ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    70% {
+        transform: rotate(-5deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
 }
 
 .button_registration:hover {
@@ -63,6 +88,7 @@ div ul {
 .ferrari_picture {
     background-image: url(/images/photos_evenements/500_ferrari/ferrari_de_collection.jpg);
     padding-bottom: 70%;
+    border-radius: 15px;
     width: 90%;
     margin: 30px auto;
     background-size: cover;
@@ -71,6 +97,7 @@ div ul {
 .f1_picture {
     background-image: url(/images/photos_evenements/500_ferrari/henri_pesacarolo.jpg);
     padding-bottom: 60%;
+    border-radius: 15px;
     width: 90%;
     margin: 20px auto;
     background-size: cover;
@@ -79,13 +106,18 @@ div ul {
 .road_picture {
     background-image: url(/images/photos_evenements/500_ferrari/parade_500_ferrari.jpg);
     padding-bottom: 60%;
+    border-radius: 15px;
     width: 90%;
     margin: 20px auto;
     background-size: cover;
 }
 
 .container_road_picture ul li {
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.container_road_picture ul li:last-child {
+    list-style-type: none;
 }
 
 @media screen and (min-width: 769px) {

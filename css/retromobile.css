@@ -57,6 +57,11 @@ p {
     text-align: center;
 }
 
+.container_porshe_911 p,
+.container_4_retromobile_picture div p {
+    color: black;
+}
+
 .porsche_907 {
     background-image: url(/images/photos_evenements/retromobile/voiture_1.jpg);
 }
