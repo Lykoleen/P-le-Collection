@@ -384,6 +384,7 @@ h2::after {
     height: 50px;
     text-align: center;
     border-radius: 50%;
+    text-decoration: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
