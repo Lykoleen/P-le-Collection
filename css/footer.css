@@ -98,14 +98,20 @@
     left: 10px;
     font-weight: bold;
     border-radius: 10px;
-    border: 1px solid #4867AA;
+    border: 1px solid #3560ba;
     padding: 0 10px;
 }
 
 .button_footer img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 3px;
+}
+
+.link_follow a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7)
 }
 
 @media screen and (min-width: 769px) {
